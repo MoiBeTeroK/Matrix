@@ -78,6 +78,13 @@ float** mulNum(float** a, int x, int n) {
     return a;
 }
 
+void poly(float*c, int n) {
+    for (int i = n; i >=0; i--) {
+        if (i == 0) cout << c[i] << "x^" << i;
+        else cout << c[i] << "x^" << i << "+";
+    }
+}
+
 void main() {
     int n; cin >> n;
     float** a;
